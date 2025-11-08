@@ -1,0 +1,14 @@
+.star-rating-container {
+  display: inline-block; /* Para que no ocupe toda la línea */
+}
+
+.star {
+  font-size: 2rem !important; /* <-- ¡Tamaño gigante y forzado! */
+  color: #555; 
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star.active {
+  color: #7b00ff; /* ¡Tu color púrpura para la estrella activa! */
+}

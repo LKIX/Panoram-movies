@@ -1,0 +1,264 @@
+/* Estilos generales (modo oscuro como tu Figma) */
+body {
+  background-color: #121212;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.content {
+  padding: 2rem;
+}
+/* El componente principal */
+
+
+/* El Carrusel */
+.movie-carousel {
+  display: flex; /* ¡La magia! Pone las cosas en horizontal */
+  overflow-x: auto; /* Permite hacer scroll horizontal */
+  overflow-y: hidden; /* Esconde el scroll vertical */
+  padding: 1rem 0;
+}
+
+/* La "Tarjeta" de cada película */
+.movie-card {
+  margin-right: 1rem; /* Espacio entre películas */
+  width: 170px; /* Ancho fijo para cada tarjeta */
+  flex-shrink: 0; /* Evita que las tarjetas se "aplasten" */
+}
+
+/* El póster */
+.movie-card img {
+  width: 100%;
+  height: 250px; /* Alto fijo */
+  object-fit: cover; /* Se asegura que la imagen cubra el espacio */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+/* El título */
+.movie-card h4 {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+  white-space: nowrap; /* Evita que el título ocupe dos líneas */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Pone "..." si el título es muy largo */
+}
+
+/* El rating */
+.movie-card p {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin: 0;
+}
+
+movie.synopsis p {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin: 0;
+}
+
+/* --- Ocultar la barra de scroll del carrusel --- */
+
+.movie-carousel::-webkit-scrollbar {
+  /* Para Chrome, Safari y Edge */
+  display: none;
+}
+
+
+/* --- Estilos del Login --- */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  width: 100%; /* <-- ASEGÚRATE QUE ESTÉ ASÍ */
+}
+
+.login-form {
+  background-color: #222;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 350px; /* <-- AÑADE ESTA LÍNEA */
+  box-sizing: border-box; /* <-- AÑADE ESTA LÍNEA */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #aaa;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+  box-sizing: border-box; /* Asegura que el padding no rompa el ancho */
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #7b00ff; /* Un color púrpura (como en tu figma) */
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.login-button:hover {
+  background-color: #9933ff;
+}
+
+.error-message {
+  color: #ff6b6b;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* --- Estilos para MovieDetailPage --- */
+.detail-page-container {
+  display: flex; /* <-- Contenedor principal usa flexbox */
+  gap: 2rem; /* Espacio entre los elementos (imagen y texto) */
+  align-items: flex-start; /* Alinea los elementos al inicio (arriba) */
+  padding-top: 2rem; /* Espacio superior */
+}
+
+.detail-page-image {
+  flex-shrink: 0; /* Evita que la imagen se haga más pequeña */
+  width: 300px; /* Ancho fijo para la imagen */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Sombra sutil */
+}
+
+.detail-page-info {
+  flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
+}
+
+.detail-page-info h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.2; /* Espaciado de línea */
+}
+
+.detail-page-info h3 {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #aaa;
+}
+
+.detail-page-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.detail-page-info p strong {
+  color: #7b00ff; /* Color púrpura para los títulos */
+}
+
+.interaction-zone {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  background-color: #222;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.interaction-zone h3 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+/* Estilos para los nuevos campos del formulario de registro */
+
+/* Divisor horizontal */
+.form-divider {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 1.5rem 0;
+}
+
+/* Estilo para el campo <select> (para que se parezca al <input>) */
+.login-form select {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #222;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: white;
+  box-sizing: border-box; /* Importante */
+}
+
+/* Estilo para el selector de fecha (para que se parezca al <input>) */
+.login-form input[type="date"] {
+  width: 100%;
+  padding: 0.65rem; /* Ajuste ligero para el padding nativo */
+  font-size: 1rem;
+  background-color: #222;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: white;
+  box-sizing: border-box;
+  font-family: inherit; /* Para que use la misma fuente */
+}
+
+/* Arregla el color del calendario en Chrome (modo oscuro) */
+.login-form input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+/* 1. Mejora la tipografía (Fuente de Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  /* ... tus otros estilos ... */
+  font-family: 'Poppins', sans-serif; /* ¡Aplica la nueva fuente a todo! */
+}
+
+/* 2. Botones con Gradiente (más "flow") */
+.login-button,
+.nav-link-button,
+.toggle-button.active {
+  /* Un gradiente sutil con tu color de marca */
+  background: linear-gradient(90deg, #7b00ff, #a64dff);
+  border: none;
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+/* 3. Micro-interacción en botones */
+.login-button:hover,
+.nav-link-button:hover,
+.toggle-button.active:hover {
+  filter: brightness(1.2); /* Se ilumina */
+  transform: scale(1.03); /* Se expande un poco */
+  cursor: pointer;
+}
+
+/* 4. Un borde sutil en la Navbar */
+.navbar {
+  /* ... tus otros estilos ... */
+  border-bottom: 1px solid #7b00ff; /* Un borde púrpura sutil */
+}

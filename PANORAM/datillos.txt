@@ -1,0 +1,29 @@
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGZlYWQ5YmIyYTJlNGE1MmE5MTQ5OTEiLCJ1c2VybmFtZSI6ImdhYm9jIiwiaWF0IjoxNzYxNTIxODE5LCJleHAiOjE3NjE2MDgyMTl9.vI3ARyLE6yawf3bZbeO3AHiE2BrFI4_gpMlQx4x0-R8
+
+{
+  "username": "gaboc",
+  "email": "gabo@correo.com",
+  "password": "mi_password_123"
+}
+
+{
+  "username": "pedro",
+  "email": "pedro@correo.com",
+  "password": "mi_password_123"
+}
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGZlYjJmZWQ4MmRkOTRkZDQyZGM4ZGQiLCJ1c2VybmFtZSI6InBlZHJvIiwiaWF0IjoxNzYxNTIyNTA2LCJleHAiOjE3NjE2MDg5MDZ9.Lxwv0ey_FJI1KRgKBWv13VUQX5d6Dov2lMnx6IUPmDo
+
+{
+  "username": "ana",
+  "email": "ana@correo.com",
+  "password": "mi_password_123"
+}
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGZlYmNkMWJkZjlkN2JkZWI1ZjZhZTgiLCJ1c2VybmFtZSI6ImFuYSIsImlhdCI6MTc2MTUyNDk2OCwiZXhwIjoxNzYxNjExMzY4fQ.xIPqT3sSZlNpcomlTqGb5PjwdggCFjQr18LDYxi0xrg
+
+Muestra 10 amigos al buscar
+
+Mínima puntuación para recomendar por amigos=8
+
+correr server: npm run dev

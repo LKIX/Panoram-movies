@@ -1,0 +1,60 @@
+/* Contenedor principal de la barra de búsqueda */
+.search-bar-container {
+  /* Hacemos que este contenedor sea el punto de referencia para el menú desplegable (position: absolute) */
+  position: relative; 
+  flex-grow: 1; /* Permite que la barra de búsqueda ocupe espacio en el Navbar */
+  max-width: 400px; /* Limita su ancho máximo */
+}
+
+/* El menú desplegable de resultados */
+.search-results-dropdown {
+  position: absolute; /* Permite que el menú se posicione encima de otros elementos */
+  top: 100%; /* Empieza justo debajo del campo de búsqueda */
+  left: 0;
+  width: 100%;
+  max-height: 300px; /* Limita la altura para que no ocupe toda la pantalla */
+  overflow-y: auto; /* Permite desplazamiento si hay muchos resultados */
+  
+  background-color: #2e2e2e; /* Fondo oscuro (similar al fondo de la app) */
+  border: 1px solid #444;
+  border-top: none; /* Quitamos la línea superior, se une al input */
+  
+  list-style: none; /* Remueve las viñetas de la lista */
+  padding: 0;
+  margin: 0;
+  z-index: 1000; /* Asegura que esté por encima de todos los demás elementos (crítico) */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para que destaque */
+}
+
+/* Estilo para cada elemento (película) dentro del menú */
+.search-results-dropdown li {
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #3a3a3a; /* Separador sutil */
+}
+
+/* Efecto al pasar el mouse por encima */
+.search-results-dropdown li:hover {
+  background-color: #7b00ff; /* Tu color púrpura */
+}
+
+/* Estilo para el mensaje de "No se encontraron resultados" */
+.search-results-dropdown li.no-results {
+  color: #aaa;
+  font-style: italic;
+  cursor: default;
+  background-color: transparent;
+}
+
+/* Estilo para el campo de input (opcional, pero mejora el aspecto) */
+.search-bar-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    background-color: #1e1e1e;
+    color: #fff;
+    border-radius: 4px;
+    box-sizing: border-box; /* Asegura que padding no aumente el ancho total */
+}

@@ -1,0 +1,18 @@
+/* 1. Reseteo Básico */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+  /* 2. Estilo de tu Figma */
+  background-color: #121212;
+  color: white;
+}
+
+/* 3. ¡LA SOLUCIÓN CLAVE! */
+/* Forzamos a la raíz de React a ocupar el 100% del ancho */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box; /* Asegura que el padding no rompa nada */
+}
+
